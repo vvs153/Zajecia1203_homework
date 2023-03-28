@@ -30,7 +30,7 @@ public class Movie {
     private String title;
     @NotNull(groups = AddMovie.class)
     @NotEmpty(groups = {AddMovie.class, UpdateMovie.class})
-    //@Pattern(regexp= "[a-zA-Z0-9] [a-zA-Z0-9]",message = "Must contain name and surname!")
+    @Pattern(regexp= "(\\w+)\\s+(\\w+)",message = "Must contain name and surname!")
     private String director;
     @NotNull(groups = AddMovie.class)
     private String genre;
