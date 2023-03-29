@@ -21,7 +21,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//http://localhost:8080/swagger-ui/index.html
 @RestController
 @RequestMapping("/movies")
 public class MovieController {
